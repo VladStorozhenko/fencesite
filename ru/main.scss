@@ -4,7 +4,7 @@
 
 $default-section-content-width: 80%;
 $violet-color: #2B2650;
-$blue-color: #0E337B;
+$blue-color: #1F50AF;
 
 // general styles 
 html {
@@ -191,7 +191,7 @@ input:focus {
         }
         .btn {
             color: white;
-            background: $blue-color;
+            background: #0E337B;
             position: absolute;
             bottom: 0;
         }
@@ -259,7 +259,7 @@ input:focus {
 
 .trial-registration {
     margin-bottom: 0;
-    background: #8695BA;
+    background: #7994DA;
     .section-content {
         position: relative;
     }
