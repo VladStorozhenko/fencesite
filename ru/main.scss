@@ -49,14 +49,6 @@ input:focus {
     cursor: pointer;
     text-transform: uppercase;
 }
-.square-background, .square-background-2 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: #E9F0FF;
-    transform: rotate(-45deg);
-    z-index: -1;
-}
 
 // Page land styles 
 
@@ -103,9 +95,18 @@ input:focus {
                         z-index: 1;
                         top: 0;
                       }
+                      a {
+                          &:hover {
+                              text-decoration: underline;
+                          }
+                      }
                       &.dropdown-li {
-                        //   display: inline-block;
                           position: relative;
+                          a {
+                            &:hover {
+                                text-decoration: none;
+                            }
+                          }
                           &:hover {
                               .dropdown-content{
                                 padding-top: 25px;
@@ -143,6 +144,13 @@ input:focus {
             font-size: 72px;
             line-height: 90px;
         }
+        .btn {
+            transition-duration: 230ms;
+            &:hover {
+                background: #E3EDFF;
+                transition-duration: 230ms;
+            }
+        }
     }
     .arrow-down-wrapper {
         display: flex;
@@ -171,17 +179,19 @@ input:focus {
 // About us styles 
 
 .about-us {
-    margin-bottom: 50px;
+    margin-bottom: 300px;
     .section-content {
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        .square-background-2 {
-            left: 300px;
-            top: 150px;
-        }
+    }
+    .photo-absolute {
+        position: absolute;
+        left: 250px;
+        top: 250px;
     }
     .about-us-content {
+        padding-left: 50px;
         position: relative;
         p {
             color: #3D3D3D;
@@ -194,6 +204,11 @@ input:focus {
             background: #0E337B;
             position: absolute;
             bottom: 0;
+            transition-duration: 230ms;
+            &:hover {
+                background: #0D295F;
+                transition-duration: 230ms;
+            }
         }
     }
 }
@@ -232,13 +247,11 @@ input:focus {
 // Quote styles 
 
 .fence-quote {
+    background-image: url('../assets/quote-bg.png');
+    background-size: cover;
+    padding: 150px 0;
     .section-content {
         position: relative;
-        padding-bottom: 100px;
-    }
-    .square-background {
-        right: 450px;
-        top: -50px;
     }
     h2 {
         width: 75%;
@@ -259,7 +272,8 @@ input:focus {
 
 .trial-registration {
     margin-bottom: 0;
-    background: #7994DA;
+    background: rgba(121, 148, 218, 0.7);
+    background-image: url('../assets/quote-bg.png');
     .section-content {
         position: relative;
     }
