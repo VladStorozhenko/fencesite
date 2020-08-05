@@ -40,7 +40,7 @@ input:focus {
 .btn {
     border: none;
     padding: 19px 40px;
-    color: #342F53;
+    color: $blue-color;
     letter-spacing: 0.03em;
     font-size: 16px;
     font-weight: 700;
@@ -262,7 +262,8 @@ input:focus {
 // Video styles 
 
 .video {
-    min-height: 900px;
+    min-height: 800px;
+    margin-bottom: 0;
     .fb-video {
         width: 100%;
     }
