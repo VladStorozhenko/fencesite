@@ -696,7 +696,7 @@ input:focus {
     .mobile-menu-hide {
         background-image: url('../assets/page-land.svg');
         background-size: cover;
-        background-position: left;
+        background-position: 20%;
         position: fixed;
         opacity: 0;
         top: 0;
@@ -718,14 +718,14 @@ input:focus {
                 text-transform: uppercase;
                 text-decoration: none;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 18px;
                 padding: 0;
             }
             li {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                padding: 15px 0;
+                padding: 15px 0 0 0;
                 &.dropdown-li {
                     display: flex;
                     flex-direction: column;
@@ -743,21 +743,28 @@ input:focus {
                         }
                     }
                     .dropdown-content {
-                        display: none;
-                    }
-                    &:hover {
-                        .dropdown-content {
-                            display: flex;
-                            padding: 10px 0;
-                            position: static;
-                            flex-direction: column;
-                            align-items: center;
-                            a {
-                                font-size: 12px;
-                                padding: 10px 0;
-                            }
+                        display: flex;
+                        position: static;
+                        flex-direction: column;
+                        align-items: center;
+                        a {
+                            font-size: 12px;
+                            padding: 15px 0;
                         }
                     }
+                    // &:hover {
+                    //     .dropdown-content {
+                    //         display: flex;
+                    //         padding: 10px 0;
+                    //         position: static;
+                    //         flex-direction: column;
+                    //         align-items: center;
+                    //         a {
+                    //             font-size: 12px;
+                    //             padding: 10px 0;
+                    //         }
+                    //     }
+                    // }
                 }
             }
         }
@@ -769,7 +776,7 @@ input:focus {
     .mobile-menu-show {
         background-image: url('../assets/page-land.svg');
         background-size: cover;
-        background-position: left;
+        background-position: 20%;
         position: fixed;
         opacity: 1;
         top: 0;
@@ -785,20 +792,22 @@ input:focus {
             list-style-type: none;
             flex-direction: column;
             width: 100%;
+            height: 60%;
             align-items: center;
+            justify-content: space-evenly;
             li a, li p {
                 color: white;
                 text-transform: uppercase;
                 text-decoration: none;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 18px;
                 padding: 0;
             }
             li {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                padding: 15px 0;
+                padding: 15px 0 0 0;
                 &.dropdown-li {
                     display: flex;
                     flex-direction: column;
@@ -816,20 +825,27 @@ input:focus {
                         }
                     }
                     .dropdown-content {
-                        display: none;
-                    }
-                    &:hover {
-                        .dropdown-content {
-                            display: flex;
-                            padding: 10px 0;
-                            flex-direction: column;
-                            align-items: center;
-                            a {
-                                font-size: 12px;
-                                padding: 10px 0;
-                            }
+                        // display: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        a {
+                            font-size: 16px;
+                            padding: 15px 0;
                         }
                     }
+                    // &:hover {
+                    //     .dropdown-content {
+                    //         display: flex;
+                    //         padding: 10px 0;
+                    //         flex-direction: column;
+                    //         align-items: center;
+                    //         a {
+                    //             font-size: 12px;
+                    //             padding: 10px 0;
+                    //         }
+                    //     }
+                    // }
                 }
             }
         }
@@ -849,7 +865,7 @@ input:focus {
     }
         // Page land 
         .page-land {
-            background-position: left;
+            background-position: 20%;
             .section-content {
                 width: 90%;
             }
@@ -868,7 +884,7 @@ input:focus {
                 }
             }
             .page-land-content {
-                margin-top: 50px;
+                margin-top: 150px;
                 width: 100%;
                 h1 {
                     font-size: 24px;

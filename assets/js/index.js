@@ -13,7 +13,9 @@ mobileMenuButton.addEventListener('click', () => {
         <path d="M30.75 10.25L10.25 30.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10.25 10.25L30.75 30.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        `
+        `;
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        window.scrollTo(0, 0);
     } else if (mobileMenu.classList.contains('mobile-menu-show')) {
         mobileMenu.classList.remove('mobile-menu-show');
         mobileMenu.classList.add('mobile-menu-hide');
@@ -22,6 +24,7 @@ mobileMenuButton.addEventListener('click', () => {
         }, 230)
         mobileMenuButton.innerHTML = '';
         mobileMenuButton.innerText = 'Меню';
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
     } else {
         mobileMenu.classList.add('mobile-menu-show');
         mobileMenu.style.display = 'flex';
@@ -30,5 +33,7 @@ mobileMenuButton.addEventListener('click', () => {
         <path d="M10.25 10.25L30.75 30.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         `;
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        window.scrollTo(0, 0);
     }
 });
