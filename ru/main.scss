@@ -1045,6 +1045,21 @@ input:focus {
     }
 }
 
+@media screen and (min-width: 788px) and (max-height: 550px) and (orientation: landscape) {
+    .page-land {
+        .page-land-content {
+            margin-top: 30px;
+            .btn {
+                padding: 15px 20px;
+                font-size: 12px;
+            }
+        }
+        .arrow-down-wrapper {
+            bottom: 40px;
+        }
+    }
+}
+
 @media screen and (max-width: 787px) and (orientation: landscape) {
     .mobile-menu-hide, .mobile-menu-show {  
         ul {
