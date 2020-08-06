@@ -742,13 +742,6 @@ input:focus {
                     }
                     .dropdown-content {
                         display: none;
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     align-items: center;
-                    //     a {
-                    //         font-size: 16px;
-                    //         padding: 15px 0;
-                    //     }
                     }
                     &:hover {
                         .dropdown-content {
@@ -821,13 +814,6 @@ input:focus {
                     }
                     .dropdown-content {
                         display: none;
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     align-items: center;
-                    //     a {
-                    //         font-size: 16px;
-                    //         padding: 15px 0;
-                    //     }
                     }
                     &:hover {
                         .dropdown-content {
@@ -860,8 +846,15 @@ input:focus {
     h2 {
         font-size: 36px;
     }
+
+    // general 
+
+    .page-section {
+        margin: 50px 0;
+    }
         // Page land 
         .page-land {
+            margin-top: 0;
             background-position: 20%;
             .section-content {
                 width: 90%;
@@ -898,11 +891,14 @@ input:focus {
         .about-us {
             margin-bottom: 100px;
             .section-content {
+                width: 100%;
                 grid-template-columns: 1fr;
                 justify-items: center;
             }
             .about-us-content {
                 padding-left: 0;
+                width: 95%;
+                margin: 0 auto;
             }
             .about-us-photo {
                 width: 100%;
@@ -921,14 +917,16 @@ input:focus {
         // Partners 
         .our-partners {
             .partners {
+                padding: 20px 0;
                 .content {
                     flex-direction: column;
                     .main-partner {
-                        height: 120px;
+                        height: 60px;
                     }
                     img {
-                        width: 150px;
-                        height: 60px;
+                        width: 90%;
+                        height: 30px;
+                        margin: 10px 0;
                     }
                 }
             }
@@ -936,27 +934,42 @@ input:focus {
 
         // quote 
         .fence-quote {
-            padding: 100px 0;
+            .section-content {
+                width: 100%;
+            }
+            padding: 50px 0;
             h2 {
                 font-size: 24px;
-                width: 80%;
+                width: 90%;
             }
         }
     
         // Video 
         .video {
-            min-height: 400px;
+            min-height: 250px;
+            .section-content {
+                width: 100%;
+            }
         }
     
         // Trial registration
         .trial-registration {
+            .section-content {
+                width: 95%;
+            }
+            h2 {
+                font-size: 24px;
+                text-align: center;
+            }
             .trial-registration-form {
-                width: 50%;
+                width: 80%;
+                margin: 0 auto;
+                align-items: center;
                 input {
-                    width: 100%;
+                    width: 80%;
                 }
                 input[type=submit] {
-                    width: 60%;
+                    width: 70%;
                 }
             }
         }
