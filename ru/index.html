@@ -40,7 +40,36 @@
                         <li><a href="/" class="site-nav-item">Контакты</a></li>
                     </ul>
                 </nav>
+                <div class="mobile-menu-button" id='mobile-button'>Меню</div>
             </header>
+            <div class="mobile-menu" id='mobile-menu'>
+                <ul>
+                    <li><a href="/" class="site-nav-item">О клубе</a></li>
+                    <li><a href="/" class="site-nav-item">Новости</a></li>
+                    <li class='dropdown-li'>
+                        <div class='dropdown-link'>
+                            <p class="site-nav-item">Турниры</p>
+                            <img src="../assets/arrow-down.svg" class='dropdown-arrow'>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="/" class='dropdown-item'>Расписание</a>
+                            <a href="/" class='dropdown-item'>Регистрация</a>
+                            <a href="/" class='dropdown-item'>Документация</a>
+                        </div>
+                    </li>
+                    <li class='dropdown-li'>
+                        <div class='dropdown-link'>
+                            <p class="site-nav-item">Галерея</p>
+                            <img src="../assets/arrow-down.svg" class='dropdown-arrow'>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="/" class='dropdown-item'>Фото</a>
+                            <a href="/" class='dropdown-item'>Видео</a>
+                        </div>
+                    </li>
+                    <li><a href="/" class="site-nav-item">Контакты</a></li>
+                </ul>
+            </div>
             <div class="page-land-content">
                 <h1>Зарегистрироваться на турнир</h1>
                 <a href="/" class='register-link'><button class='btn'>Регистрация</button></a>
@@ -57,7 +86,7 @@
     <section class="about-us page-section">
         <div class="section-content">
             <div class="about-us-photo">
-                <img src="../assets/about-us-photo.svg" alt="О нас">
+                <img src="../assets/about-us-photo.svg" alt="О нас" class='about-us-img'>
                 <img src="../assets/about-us-photo-2.jpg" alt="О нас" class='photo-absolute'>
             </div>
             <div class="about-us-content">
@@ -92,6 +121,7 @@
         </div>
     </section>
     <section class="trial-registration page-section">
+        <div class="background-image"></div>
         <div class="section-content">
             <div class="center-text">
                 <h2>Запишись на пробное занятие!</h2>
@@ -136,8 +166,9 @@
             </nav>
         </div>
     </footer>
-    
     <!-- Load Facebook SDK for JavaScript -->
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <!-- Script for mobile menu -->
+    <script src="../assets/js/index.js"></script>
 </body>
 </html>
