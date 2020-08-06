@@ -745,27 +745,27 @@ input:focus {
                         }
                     }
                     .dropdown-content {
-                        // display: none;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        a {
-                            font-size: 16px;
-                            padding: 15px 0;
+                        display: none;
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // a {
+                        //     font-size: 16px;
+                        //     padding: 15px 0;
+                        // }
+                    }
+                    &:hover {
+                        .dropdown-content {
+                            display: flex;
+                            padding: 10px 0;
+                            flex-direction: column;
+                            align-items: center;
+                            a {
+                                font-size: 12px;
+                                padding: 10px 0;
+                            }
                         }
                     }
-                    // &:hover {
-                    //     .dropdown-content {
-                    //         display: flex;
-                    //         padding: 10px 0;
-                    //         flex-direction: column;
-                    //         align-items: center;
-                    //         a {
-                    //             font-size: 12px;
-                    //             padding: 10px 0;
-                    //         }
-                    //     }
-                    // }
                 }
             }
         }
@@ -789,13 +789,9 @@ input:focus {
         justify-content: center;
         align-items: center;
         ul {
-            display: flex;
             list-style-type: none;
-            flex-direction: column;
             width: 100%;
             height: 60%;
-            align-items: center;
-            justify-content: space-evenly;
             li a, li p {
                 color: white;
                 text-transform: uppercase;
@@ -808,7 +804,7 @@ input:focus {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                padding: 15px 0 0 0;
+                padding: 20px 0 20px 0;
                 &.dropdown-li {
                     display: flex;
                     flex-direction: column;
@@ -826,27 +822,28 @@ input:focus {
                         }
                     }
                     .dropdown-content {
-                        // display: none;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        a {
-                            font-size: 16px;
-                            padding: 15px 0;
+                        display: none;
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     align-items: center;
+                    //     a {
+                    //         font-size: 16px;
+                    //         padding: 15px 0;
+                    //     }
+                    }
+                    &:hover {
+                        .dropdown-content {
+                            display: flex;
+                            padding: 10px 0;
+                            flex-direction: column;
+                            align-items: center;
+                            max-height: 500px;
+                            a {
+                                font-size: 12px;
+                                padding: 10px 0;
+                            }
                         }
                     }
-                    // &:hover {
-                    //     .dropdown-content {
-                    //         display: flex;
-                    //         padding: 10px 0;
-                    //         flex-direction: column;
-                    //         align-items: center;
-                    //         a {
-                    //             font-size: 12px;
-                    //             padding: 10px 0;
-                    //         }
-                    //     }
-                    // }
                 }
             }
         }
